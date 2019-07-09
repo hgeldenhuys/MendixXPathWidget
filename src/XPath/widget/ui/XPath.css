@@ -1,0 +1,431 @@
+.x-path-browser {
+    width: 100%;
+    font-size: 120%;
+}
+
+span.module-name {
+    white-space: pre;
+    font-size: 70%;
+    color: #bd1717;
+    line-height: 50%;
+    display: table;
+}
+
+span.entity-name {
+    font-size: 100%;
+    color: #2828aa;
+    cursor: not-allowed;
+}
+
+td.x-path-entity, td.root-entity, td.entity, td.x-path, td.x-path-button {
+    vertical-align: middle;
+    height: 55px;
+}
+
+.entity-member-label {
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+td.x-path-condition-button {
+    color: blue;
+    cursor: pointer;
+}
+
+td.x-path-condition-left-bracket, td.x-path-condition-right-bracket {
+    color: darkred;
+}
+
+td.x-path-conditions {
+
+}
+
+.x-path-browser td {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.xpath-use-entity {
+    color: antiquewhite;
+}
+
+.xpath-use-entity.selected {
+    color: blue;
+    font-weight: bold;
+}
+
+td.x-path-expression-part, td.x-path-expression-part-etc {
+    white-space: pre;
+}
+
+span.x-path-parameter {
+    cursor: pointer;
+}
+
+span.x-path-parameter.token-parameter {
+    color: purple;
+}
+
+span.literal-input-display {
+    white-space: pre;
+}
+
+span.literal-input-display.String {
+    color: darkred;
+}
+
+span.literal-input-display.Integer, span.literal-input-display.Decimal,
+span.literal-input-display.Float, span.literal-input-display.Currency {
+    color: blueviolet;
+    background-color: #efdfff;
+}
+
+span.add-expression-button {
+    padding: 0px 2px;
+    color: #608a26;
+    font-size: 85%;
+    font-weight: bold;
+    border-radius: 40%;
+    cursor: copy;
+}
+
+span.x-path-parameter.literal-parameter-edit {
+    color: #f99b1d;
+    padding: 0 2px;
+    font-size: 100%;
+    vertical-align: top;
+    font-weight: normal;
+    font-size: 70%;
+}
+
+td.x-path-remove-condition {
+    color: red;
+    font-size: 80%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+td.x-path-left-condition, td.x-path-right-condition {
+    font-size: 100%;
+    font-weight: bold;
+    color: #337ab7;
+}
+
+span.x-path-expression-part.select {
+    font-weight: bold;
+    color: #d5d5e0;
+    cursor: s-resize;
+}
+
+span.x-path-parameter.attribute-parameter {
+    font-weight: bold;
+    color: cadetblue;
+    cursor: pointer;
+}
+
+span.x-path-expression-part {
+    color: green;
+    white-space: pre-wrap;
+}
+
+span.x-path-continue-pathused, td.continue-path {
+    vertical-align: middle;
+    color: cornflowerblue;
+    cursor: e-resize;
+}
+
+td.x-path-add-condition {
+    color: #196bc2;
+    font-size: 70%;
+    vertical-align: middle;
+    cursor: copy;
+}
+
+span.x-path-parameter.association-parameter {
+    color: #0064cd;
+    font-weight: bold;
+}
+
+span.full-name {
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+td.left-parenthesis, td.right-parenthesis {
+    color: #ccc;
+    font-weight: bold;
+}
+
+td.left-parenthesis.selected, td.right-parenthesis.selected {
+    color: darkcyan;
+}
+
+.write-wrapper {
+    float: left;
+}
+
+span.literal-input-display {
+    white-space: pre;
+    background-color: #ffdada;
+}
+
+span.x-path-parameter.blank-parameter {
+    color: antiquewhite;
+    font-weight: bold;
+    padding: 0px 3px;
+}
+
+.condition-highlighted {
+    background-color: aliceblue;
+    border-bottom: 1px solid #66c4ff;
+}
+
+.x-path-browser td span {
+    vertical-align: top;
+}
+
+span.expression-enum {
+    color: darkorange;
+}
+
+span.enum-input-display.Enum {
+    color: darkorange;
+    border-bottom: 1px dotted;
+}
+
+span.x-path-parameter.enum-parameter-edit {
+    color: darkorange;
+    font-size: 70%;
+}
+
+
+
+/*td.x-path-path {*/
+
+/*}*/
+
+td.x-path-entity {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lined {
+    border-top: 1px solid black;
+}
+
+.attribute-name-list Enum {
+    color: chocolate;
+}
+
+.attribute-name-list Enum {
+    color: chocolate;
+}
+
+.attribute-name-list {
+    font-weight: bold;
+}
+
+span.association-list {
+    float: right;
+    font-size: 80%;
+    margin-left: 5px;
+    color: white;
+    background-color: black;
+    width: 100px;
+    text-align: center;
+    padding: 0px 3px;
+}
+
+span.association-name-list {
+    color: #337ab7;
+}
+
+
+
+span.data-type-list {
+    color: white;
+    float: right;
+    background-color: #555555;
+    padding: 0px 3px;
+    margin-left: 5px;
+    width: 100px;
+    text-align: center;
+    font-size: 90%;
+}
+
+span.data-type-list.Binary { background-color: #49A078; }
+span.data-type-list.String { background-color: #F4AC45; }
+span.data-type-list.HashString { background-color: #F4AC45; }
+span.data-type-list.AutoNumber { background-color: #2828aa; }
+span.data-type-list.Integer { background-color: #2828aa; }
+span.data-type-list.Long { background-color: #2828aa; }
+span.data-type-list.Decimal { background-color: #8E6C88; }
+span.data-type-list.Float { background-color: #8E6C88; }
+span.data-type-list.Currency { background-color: #8E6C88; }
+span.data-type-list.Enum { background-color: #773344; }
+
+
+
+/* Colour map */
+
+.color-1 { color: #92BFB1;}
+.color-2 { color: #F4AC45;}
+.color-3 { color: #BACBA9;}
+.color-4 { color: #A61C3C;}
+.color-5 { color: #A9CBB7;}
+.color-6 { color: #FF934F;}
+.color-7 { color: #8E6C88;}
+.color-8 { color: #717568;}
+.color-9 { color: #3F4739;}
+.color-10 { color: #92BFB1;}
+.color-11 { color: #773344;}
+.color-12 { color: #0B0014;}
+.color-13 { color: #63C7B2;}
+.color-14 { color: #8E6C88;}
+.color-15 { color: #263D42;}
+.color-16 { color: #1F2421;}
+.color-17 { color: #216869;}
+.color-18 { color: #49A078;}
+.color-19 { color: #717568;}
+.color-20 { color: #3F4739;}
+.color-21 { color: #92BFB1;}
+.color-22 { color: #92BFB1;}
+.color-23 { color: #92BFB1;}
+.color-24 { color: #92BFB1;}
+.color-25 { color: #92BFB1;}
+.color-26 { color: #92BFB1;}
+.color-27 { color: #92BFB1;}
+.color-28 { color: #92BFB1;}
+.color-29 { color: #92BFB1;}
+.color-30 { color: #92BFB1;}
+
+
+input.dijitReset.dijitInputField.dijitArrowButtonInner {
+    width: 20px;
+}
+
+input.dijitReset.dijitInputField.dijitArrowButtonInner {
+    text-indent: 0;
+    width: 16px;
+    margin-left: 5px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='15px' height='8px'><polyline id='Line' fill='none' stroke='#555555' points='0.5 0.5 6 6 11.545361 0.5'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position-y: 6px;
+}
+
+.condition-bracket {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 145%;
+}
+
+.xpath-entity {
+    color: teal;
+    font-weight: bold;
+}
+
+.xpath-delete-condition {
+    margin-left: 5px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="345px" height="460px" viewBox="0 0 345 460" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="if_trash_257479" fill="#EF4823"><polygon id="Shape" points="92 23 115 23 115 69 92 69"></polygon><polygon id="Shape" points="230 23 253 23 253 69 230 69"></polygon><polygon id="Shape" points="92 0 253 0 253 23 92 23"></polygon><polygon id="Shape" points="0 46 345 46 345 115 0 115"></polygon><path d="M23,69 L23,460 L322,460 L322,69 L23,69 Z M115,391 L92,391 L92,115 L115,115 L115,391 Z M184,391 L161,391 L161,115 L184,115 L184,391 Z M253,391 L230,391 L230,115 L253,115 L253,391 Z" id="Shape"></path></g></g></svg>');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background-size: 71%;
+    cursor: pointer;
+}
+
+.xpath-expression, .xpath-expressions {
+    display: inline-block;
+}
+
+span.xpath-parenthises {
+    padding: 0px 3px;
+    color: #cbcbcb;
+    font-size: 140%;
+}
+
+span.xpath-parenthises.selected {
+    color: brown;
+    font-weight: bold;
+}
+
+.xpath-expression-parts {
+    background-color: #a1d9ff3b;
+    display: inline-block;
+}
+
+.form-control.inline-dropdown {
+    display: inline-block;
+    width: inherit;
+}
+
+.xpath-condition {
+    padding-left: 5px;
+    list-style-type: upper-latin;
+}
+
+.x-path-expression-part {
+    color: burlywood;
+}
+
+ul.x-path-conditions {
+    margin-left: 0px;
+    padding-left: 17px;
+    background-color: #0064cd0a;
+}
+
+.expression-empty {
+    color: blue;
+}
+
+.expression-token {
+    color: green;
+}
+
+.lookup-from {
+    display: inline;
+}
+
+.expression-attribute {
+    font-weight: bold;
+    color: black;
+}
+
+ol.x-path-conditions {
+    padding-left: 25px;
+}
+
+div.dijitReset.dijitMenuItemSelected {
+    background-color: #66c4ff;
+}
+
+.expression-association.with-entity {
+    color: chocolate;
+}
+
+.expression-association {
+    color: navy;
+}
+
+.small-association {
+    font-size: 70%;
+}
+
+.xpath-entity-path {
+    display: inline;
+}
+
+.x-path-parameter {
+    vertical-align: top;
+}
+
+.x-path-entity {
+    vertical-align: bottom;
+}
+
+.association-parameter {
+    display: inline-block;
+}

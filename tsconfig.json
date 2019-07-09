@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "outDir": "src/XPath/widget/"
+        // "outDir": "/Users/geldhe/Documents/Mendix/BDC - Innov8-mXm_2/deployment/web/widgets/XPath/widget/"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
+
