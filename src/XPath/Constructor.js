@@ -268,7 +268,7 @@ var DomainModel = /** @class */ (function () {
             var entity = _this.entities[entityToName];
             entity.mxEntity.getSubEntities().forEach(function (subName) {
                 var subEntity = _this.entities[subName];
-                subEntity.addAssociation(association);
+                entity.addAssociation(association);
             });
         });
     }

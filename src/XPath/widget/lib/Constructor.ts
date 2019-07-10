@@ -141,11 +141,14 @@ class Association extends Member {
         this.entityFrom = entity;
     }
     public otherEntity(entityName: string): string {
-        const entityTo: string = this.entityFrom.mxEntity.getSelectorEntity(this.qualifiedName);
-        if (entityTo === entityName) {
+        const entityTo: string[] = [this.entityFrom.mxEntity.getSelectorEntity(this.qualifiedName)];
+        mx.meta.getEntity(entityName).getSuperEntities().forEach((sub: string) => {
+            entityTo.push(sub);
+        });
+        if (entityTo.indexOf(entityName) > -1) {
             return this.entityFrom.qualifiedName;
         } else {
-            return entityTo;
+            return entityTo[0];
         }
     }
 }
@@ -216,8 +219,16 @@ class DomainModel {
                     this.associations[association.qualifiedName] = association;
                     associationNames.push(association);
                 });
+                mxEntity.getSuperEntities().forEach((name: string) => {
+                    const superEntity: Entity = new Entity(name, mx.meta.getEntity(name));
+                    superEntity.associationNames.forEach((associationName) => {
+                        const association = entity.getAssociation(associationName);
+                        associationNames.push(association);
+                    });
+                });
             }
         });
+
         const loggedWarning = [];
         associationNames.forEach((association: Association) => {
             const associationName = association.qualifiedName;
@@ -227,6 +238,10 @@ class DomainModel {
                 const entity: Entity = this.entities[entityToName];
                 entity.addAssociation(association);
                 this.associationNames.push(associationName);
+                // entity.mxEntity.getSubEntities().forEach((subName: string) => {
+                //     const subEntity: Entity = this.entities[subName];
+                //     entity.addAssociation(association);
+                // });
                 // association.entityTo.addAssociation(associationName);
             } catch (e) {
                 if (loggedWarning.indexOf(`You are not allowed to view ${associationName}`) === -1) {
@@ -235,6 +250,14 @@ class DomainModel {
                 }
             }
             // association.entityFrom.mxEntity
+        });
+        associationNames.forEach((association: Association) => {
+            const entityToName = association.entityFrom.mxEntity.getSelectorEntity(association.qualifiedName);
+            const entity: Entity = this.entities[entityToName];
+            entity.mxEntity.getSubEntities().forEach((subName: string) => {
+                const subEntity: Entity = this.entities[subName];
+                subEntity.addAssociation(association);
+            });
         });
     }
 }

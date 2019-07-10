@@ -503,6 +503,13 @@ define([
                 var associationName = member.split('.')[1].replace(/([A-Z])/g, ' $1').replace(/^./, function (str) { return str.toUpperCase(); }).replace("_", ' ');
                 parameters.push({ display: "<span class=\"expression-association\">" + associationName + "</span> in " + module, name: associationName, id: member, type: "XPathAssociation", association: associationName, associationDisplay: "<span class=\"expression-association\">" + associationName + "</span>" });
             });
+            xpathEntity.getEntity().associationNames.forEach(function (member) {
+                var module = member.split('.')[0].replace(/([A-Z])/g, ' $1').replace(/^./, function (str) { return str.toUpperCase(); }).replace("_", ' ');
+                var association = domain.associations[member];
+                var entity = association.otherEntity(xpathEntity.entityName);
+                var associationName = member.split('.')[1].replace(/([A-Z])/g, ' $1').replace(/^./, function (str) { return str.toUpperCase(); }).replace("_", ' ');
+                parameters.push({ display: "<span class=\"expression-association\">" + associationName + "</span> in " + module, name: associationName, id: member, type: "XPathAssociation", association: associationName, associationDisplay: "<span class=\"expression-association\">" + associationName + "</span>" });
+            });
             parameters.push({ display: '<span class="expression-token">Current Date Time</span>', name: "Current Date Time", id: "'[%CurrentDateTime%]'", type: "RenderToken" });
             parameters.push({ display: '<span class="expression-token">Begin Of Current Day</span>', name: "Begin Of Current Day", id: "'[%BeginOfCurrentDay%]'", type: "RenderToken" });
             parameters.push({ display: '<span class="expression-token">Begin Of Current Day UTC</span>', name: "Begin Of Current Day UTC", id: "'[%BeginOfCurrentDayUTC%]'", type: "RenderToken" });
