@@ -281,7 +281,7 @@ define([
                             enumerationValues = xpathEntity.getEntity().mxEntity.getEnumMap(attribute.attribute.qualifiedName);
                         }
                     }
-                    else {
+                    else if (parameter.getParent() && parameter.getParent().myIndex) {
                         var expressionIndex = parameter.getParent().myIndex();
                         var xpathEntity = parameter.getParent().getXPathEntity();
                         var condition = parameter.getParent().getCondition();
@@ -408,7 +408,7 @@ define([
                     var emptyDom = cr("td", { class: "association-parameter-td " + conditionClass_1() }, xPathAssociationWrite);
                     renderParameter_1(xPathAssociation, parentDom, emptyDom, guid, xPathAssociationWrite);
                     if (!xPathAssociation.usingEntity()) {
-                        var continuePath = cr("td", { class: "continue-path" }, '/…');
+                        var continuePath = cr("td", { class: "expressionIndex = parameter.getParent()." }, '/…');
                         dojo.place(continuePath, parentDom);
                         dojoOn(continuePath, 'click', dojo.hitch(_this, function (associationSelected, event) {
                             associationSelected.useEntity();

@@ -266,10 +266,11 @@ var DomainModel = /** @class */ (function () {
         associationNames.forEach(function (association) {
             var entityToName = association.entityFrom.mxEntity.getSelectorEntity(association.qualifiedName);
             var entity = _this.entities[entityToName];
-            entity.mxEntity.getSubEntities().forEach(function (subName) {
-                var subEntity = _this.entities[subName];
-                subEntity.addAssociation(association);
-            });
+            if (entity && entity.mxEntity)
+                entity.mxEntity.getSubEntities().forEach(function (subName) {
+                    var subEntity = _this.entities[subName];
+                    subEntity.addAssociation(association);
+                });
         });
     }
     return DomainModel;

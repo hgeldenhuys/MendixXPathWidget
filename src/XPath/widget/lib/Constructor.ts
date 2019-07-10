@@ -254,7 +254,7 @@ class DomainModel {
         associationNames.forEach((association: Association) => {
             const entityToName = association.entityFrom.mxEntity.getSelectorEntity(association.qualifiedName);
             const entity: Entity = this.entities[entityToName];
-            entity.mxEntity.getSubEntities().forEach((subName: string) => {
+            if (entity && entity.mxEntity) entity.mxEntity.getSubEntities().forEach((subName: string) => {
                 const subEntity: Entity = this.entities[subName];
                 subEntity.addAssociation(association);
             });

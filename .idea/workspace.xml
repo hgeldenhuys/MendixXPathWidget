@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d703459f-2555-41ef-b28e-06a20d73863c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/XPath.mpk" beforeDir="false" afterPath="$PROJECT_DIR$/src/XPath.mpk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/XPath/widget/XPath.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/XPath/widget/XPath.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/XPath/widget/XPath.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/XPath/widget/XPath.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/XPath/widget/lib/Constructor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/XPath/widget/lib/Constructor.js" afterDir="false" />
@@ -24,11 +24,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/XPath/widget/lib/Constructor.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="236" column="17" lean-forward="true" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="17" />
+            <state relative-caret-position="578">
+              <caret line="256" column="41" selection-start-line="256" selection-start-column="41" selection-end-line="256" selection-end-column="41" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -37,14 +37,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/XPath/widget/XPath.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="404" column="76" selection-start-line="404" selection-start-column="63" selection-end-line="404" selection-end-column="76" />
+            <state relative-caret-position="240">
+              <caret line="288" column="101" selection-start-line="288" selection-start-column="101" selection-end-line="288" selection-end-column="101" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/XPath/widget/lib/Constructor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="618">
+              <caret line="268" column="18" selection-start-line="268" selection-start-column="12" selection-end-line="268" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -60,6 +69,9 @@
       <find>associationNames</find>
       <find>addAssociation</find>
       <find>continue-path</find>
+      <find>expressionIndex = parameter.getParent().</find>
+      <find>expressionIndex = parameter.getParent()</find>
+      <find>parameter.getParent()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,7 +107,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,13 +140,24 @@
               <item name="widget" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MendixXPathWidget" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MendixXPathWidget" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="XPath" type="462c0819:PsiDirectoryNode" />
+              <item name="widget" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="Constructor.ts" type="620a8d5e:NestingTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -169,18 +191,19 @@
       <option name="presentableId" value="Default" />
       <updated>1562731440497</updated>
       <workItem from="1562731442322" duration="283000" />
-      <workItem from="1562732178866" duration="4310000" />
+      <workItem from="1562732178866" duration="4826000" />
+      <workItem from="1562743261838" duration="2781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4593000" />
+    <option name="totallyTimeSpent" value="7890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -215,23 +238,30 @@
     <entry file="file://$PROJECT_DIR$/src/XPath/XPath.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/XPath/widget/lib/Constructor.ts">
+    <entry file="file://$PROJECT_DIR$/src/XPath/widget/lib/Constructor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="236" column="17" lean-forward="true" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="618">
+          <caret line="268" column="18" selection-start-line="268" selection-start-column="12" selection-end-line="268" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/XPath/widget/XPath.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="404" column="76" selection-start-line="404" selection-start-column="63" selection-end-line="404" selection-end-column="76" />
+        <state relative-caret-position="240">
+          <caret line="288" column="101" selection-start-line="288" selection-start-column="101" selection-end-line="288" selection-end-column="101" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/XPath/widget/lib/Constructor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="256" column="41" selection-start-line="256" selection-start-column="41" selection-end-line="256" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

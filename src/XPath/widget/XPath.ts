@@ -286,7 +286,7 @@ define([
                         if (attribute.getDataType() === DataType.Enum) {
                             enumerationValues = xpathEntity.getEntity().mxEntity.getEnumMap(attribute.attribute.qualifiedName);
                         }
-                    } else {
+                    } else if (parameter.getParent() && (parameter.getParent() as Expression).myIndex) {
                         const expressionIndex = (parameter.getParent() as Expression).myIndex();
                         const xpathEntity = (parameter.getParent() as Expression).getXPathEntity();
                         const condition = (parameter.getParent() as Expression).getCondition();
@@ -402,7 +402,7 @@ define([
                     const emptyDom = cr(`td`, {class: `association-parameter-td ${conditionClass()}`}, xPathAssociationWrite);
                     renderParameter(xPathAssociation, parentDom, emptyDom, guid, xPathAssociationWrite);
                     if (!xPathAssociation.usingEntity()) {
-                        const continuePath = cr(`td`, {class: `continue-path`}, '/…');
+                        const continuePath = cr(`td`, {class: `expressionIndex = parameter.getParent().`}, '/…');
                         dojo.place(continuePath, parentDom);
                         dojoOn(continuePath, 'click', dojo.hitch(this, (associationSelected: XPathAssociation, event) => {
                             associationSelected.useEntity();
